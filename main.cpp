@@ -101,7 +101,7 @@ void playWordleGame() {
     int score = 0;  
     int consecutiveWins = 0; 
     std::vector<std::string> words = import_words();
-    int word_length = 5, num_words = 12, num_chances = 6;
+    int word_length = 5, num_words = 200, num_chances = 6;
     std::vector<std::string> wordles = select_words(words, word_length, num_words);
 
     for (int j = 0; j < num_words; j++) {
