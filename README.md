@@ -41,25 +41,25 @@ In your our function and throughout the code, we have not used any non-standard 
 ## Features Supported by These Libraries
 Here are the standard libraries we've used:
 
-<iostream>: This is a standard header in the C++ Standard Library that provides functionalities for input-output operations. We've used this for standard console I/O operations like std::cout for displaying output to the console and std::cin for reading input from the user.
+iostream: This is a standard header in the C++ Standard Library that provides functionalities for input-output operations. We've used this for standard console I/O operations like std::cout for displaying output to the console and std::cin for reading input from the user.
 
-<vector>: This is part of the C++ Standard Template Library (STL) and is used to store dynamically resizable arrays. We've used std::vector to manage collections of words and player scores.
+vector: This is part of the C++ Standard Template Library (STL) and is used to store dynamically resizable arrays. We've used std::vector to manage collections of words and player scores.
 
-<string>: This standard library provides support for manipulating strings. We've used std::string extensively for handling text data throughout our game.
+string: This standard library provides support for manipulating strings. We've used std::string extensively for handling text data throughout our game.
 
-<algorithm>: This includes a set of functions especially designed to be used on ranges of elements. We've used functions like std::sort and std::find_if to manipulate data structures for purposes like sorting the scoreboard and finding specific players.
+algorithm: This includes a set of functions especially designed to be used on ranges of elements. We've used functions like std::sort and std::find_if to manipulate data structures for purposes like sorting the scoreboard and finding specific players.
 
-<limits>: Provides information about the properties of arithmetic types. In our code, it's used with std::numeric_limits<std::streamsize>::max() to handle input errors and clear the input buffer.
+limits: Provides information about the properties of arithmetic types. In our code, it's used with std::numeric_limits<std::streamsize>::max() to handle input errors and clear the input buffer.
 
-<fstream>: Provides facilities for file handling. We've used std::ifstream to read from files, which is crucial for loading external resources like game instructions, winning messages, and so forth.
+fstream: Provides facilities for file handling. We've used std::ifstream to read from files, which is crucial for loading external resources like game instructions, winning messages, and so forth.
 
-<cstdlib>: This is a standard library in C++ which provides functionality for general purposes including dynamic memory management, random number generation, and system functions. Here, we use it for the rand() function to generate random numbers.
+cstdlib: This is a standard library in C++ which provides functionality for general purposes including dynamic memory management, random number generation, and system functions. Here, we use it for the rand() function to generate random numbers.
 
-<ctime>: Also part of the C++ Standard Library, this includes functions and types that provide standardized access to time and date. It is used here for time(NULL) to get the current time, which we then use to seed the random number generator with srand().
+ctime: Also part of the C++ Standard Library, this includes functions and types that provide standardized access to time and date. It is used here for time(NULL) to get the current time, which we then use to seed the random number generator with srand().
 
-<cctype>: This includes the Standard Library's <cctype> header, which provides functions for character classification and conversion. The function std::tolower used in our code is provided by this header and is used to convert characters to their lowercase equivalents.
+cctype: This includes the Standard Library's <cctype> header, which provides functions for character classification and conversion. The function std::tolower used in our code is provided by this header and is used to convert characters to their lowercase equivalents.
 
-<sstream>: This includes the C++ Standard Library's <sstream> header, which provides string stream classes such as std::stringstream. String streams can be used for reading/writing data from/to strings in memory, similar to how file streams read/write data from/to files.
+sstream: This includes the C++ Standard Library's <sstream> header, which provides string stream classes such as std::stringstream. String streams can be used for reading/writing data from/to strings in memory, similar to how file streams read/write data from/to files.
 
 The ANSI color codes (#define ANSI_COLOR_RED "\x1b[31m", etc.) we've defined simply macro definitions for escape sequences that are widely supported by many terminal emulators to provide colored text output. These are used directly in our code to enhance the visual appeal of the game's console output.
 
